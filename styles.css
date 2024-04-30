@@ -9,6 +9,7 @@
     src: url(images/Norse-Bold.otf);
  }
 
+
  .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -24,10 +25,12 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    flex-shrink: 1;
+
 }
 
 .section-top-right {
-
+    
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -41,7 +44,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     box-shadow: 2px 1px 1px gray;
 }
 .section-bottom-right {
@@ -72,17 +75,18 @@
 .img-sidebar {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.507);
-    height: 120px;
+    height: 7rem;
     min-width: 434px;
     top: 35vh;
     color: white;
     text-align: center;
     align-content: center;
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: norseBold;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20vw;
 }
 
 .image-footer {
@@ -91,7 +95,8 @@
     color: white;
     text-align: center;
     min-width: 434px;
-
+    width: 20vw;
+    font-size: 1rem;
 }
 
 .credit-img {
@@ -107,14 +112,15 @@
     font-family: "roboto";
     font-size: 1.5rem;
     margin-left: 20px;
-    margin-top: -20px;
-    
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 section {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .form-container {
@@ -128,7 +134,7 @@ section {
     display: flex;
     flex-direction: column;
 
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 [type="text"], [type="tel"], [type="email"] {
@@ -203,3 +209,6 @@ label {
     margin-bottom: 2px;
 }
 
+.create-account:hover {
+cursor: pointer;
+}
