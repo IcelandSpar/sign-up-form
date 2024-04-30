@@ -28,7 +28,7 @@
                 <p>Let's do this!</p>
             </div>
             <div>
-                <form action="" method="post">
+                <form action="https://httpbin.org/post" method="post">
                 <div class="form-container">
                     <section>
                         <div class="input-text">
@@ -39,7 +39,7 @@
                             <label for="email">Email</label>
                             <input type="email" id="email" placeholder="johndoe@gmail.com" name="email">
                         </div>
-                        <div class="input-text">
+                        <div class="input-text password">
                             <label for="password">Password</label>
                             <input type="tel" id="password" name="password" required>
                         </div>
@@ -54,18 +54,19 @@
                             <input type="tel" id="phone_number" name="phone_number">
                         </div>
                         <div class="input-text">
-                            <label for="confirm_password">Password</label>
+                            <label for="confirm_password">Confirm Password</label>
                             <input type="tel" id="confirm_password" name="confirm_password" required>
                         </div>
                     </section>
                 </div>
             </div>
-            </form>
+
         </div>
         <div class="section-bottom-right">
             <div class="button-login-container">
                 <button class="create-account" type="submit">Create Account</button>
-                <p>Already have an account? <a class="login-link">Log in</a></p>
+            </form>
+                <p>Already have an account? <a class="login-link" href="https://www.google.com/">Log in</a></p>
             </div>
         </div>
     </div>

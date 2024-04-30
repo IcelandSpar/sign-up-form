@@ -16,7 +16,7 @@
   }
 
 .page-container {
-    border: 1px solid black;
+
     display: flex;
 }
 
@@ -27,26 +27,28 @@
 }
 
 .section-top-right {
-    border: 1px solid black;
+
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+    background-color: whitesmoke;
     
 }
 .section-middle-right {
-    border: 1px solid black;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 2px 1px 1px gray;
 }
 .section-bottom-right {
 
-    border: 1px solid black;
-    flex-grow: 1;
 
+    flex-grow: 1;
+    background-color: whitesmoke
 }
 
 .section-top-right > p {
@@ -54,7 +56,8 @@
     margin-left: 20px;
     margin-right: 100px;
     font-size: 1.5rem;
-    font-family: "roboto"
+    font-family: "roboto";
+    max-width: 50ch;
 }
 .leaf-img {
     height: 100vh;
@@ -75,7 +78,7 @@
     color: white;
     text-align: center;
     align-content: center;
-    font-size: 3.7rem;
+    font-size: 5rem;
     font-family: norseBold;
     display: flex;
     justify-content: center;
@@ -104,6 +107,8 @@
     font-family: "roboto";
     font-size: 1.5rem;
     margin-left: 20px;
+    margin-top: -20px;
+    
 }
 
 section {
@@ -130,48 +135,71 @@ section {
     height: 30px;
     width: 30vh;
     border-radius: 10px;
-    border: 2px solid gray;
+    border: 2px solid #E5E7EB;
+    box-shadow: 1px 1px 1px #E5E7EB;
 }
 
-[type="text"]:valid {
-    border: 2px solid blue;
+[type="text"]:focus {
+    border: 3px solid blue;
+    box-shadow: 2px 2px 1px blue;
 }
-[type="tel"]:valid {
-    border: 2px solid blue;
+[type="tel"]:focus {
+    border: 3px solid blue;
+    box-shadow: 2px 2px 1px blue;
 }
-[type="email"]:valid {
-    border: 2px solid blue;
+[type="email"]:focus {
+    border: 3px solid blue;
+    box-shadow: 2px 2px 1px blue;
 }
 [type="text"]:invalid {
     border: 2px solid red;
+    box-shadow: 2px 2px 1px red;
 }
 [type="tel"]:invalid {
     border: 2px solid red;
+    box-shadow: 2px 2px 1px red;
 }
 [type="email"]:invalid {
     border: 2px solid red;
+    box-shadow: 2px 2px 1px red;
 }
 
 .button-login-container {
     display: flex;
     flex-direction: column;
     width: 20vw;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 30px;
     gap: 20px;
     font-family: "roboto";
+    margin-left: 20px;
+
 }
 
 .create-account {
     background-color: #596D48;
     border-radius: 7px;
-    padding: 20px 40px;
+    padding: 10px 40px;
     color: white;
     font-family: "roboto";
     font-size: 1.3rem;
+}
+
+.login-link:link {
+color: #596D48;
+font-weight: bold;
+text-decoration: none;
+}
+.login-link:visited {
+    color: #596D48;
     font-weight: bold;
 }
 
-.login-link {
-color: #596D48;
+label {
+    margin-left: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .85rem;
+    margin-bottom: 2px;
 }
+
